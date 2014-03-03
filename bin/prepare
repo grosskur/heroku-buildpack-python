@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# fail fast
+set -o errexit
+set -o nounset
+set -o pipefail
+
+scriptname=$(basename $0)
+
+cat <<EOT
+---
+packages:
+  - autoconf
+  - bind9-host
+  - bison
+  - build-essential
+  - coreutils
+  - curl
+  - daemontools
+  - dnsutils
+  - ed
+  - imagemagick
+  - iputils-tracepath
+  - language-pack-en
+  - libbz2-dev
+  - libcurl4-openssl-dev
+  - libevent-dev
+  - libglib2.0-dev
+  - libjpeg-dev
+  - libmagickcore-dev
+  - libmysqlclient-dev
+  - libncurses5-dev
+  - libpq-dev
+  - libreadline6-dev
+  - libssl-dev
+  - libxml2-dev
+  - libxslt-dev
+  - netcat-openbsd
+  - openssh-client
+  - openssh-server
+  - openssl
+  - socat
+  - tar
+  - telnet
+  - zlib1g-dev
+EOT
